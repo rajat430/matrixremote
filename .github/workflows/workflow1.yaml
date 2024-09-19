@@ -11,5 +11,4 @@ jobs:
       - name: "task${{matrix.listofvalues}}"
         run: | 
           echo "${{matrix.listofvalues}}"
-          ifconfig
           hostname
