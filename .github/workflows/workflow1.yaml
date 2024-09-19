@@ -9,4 +9,7 @@ jobs:
     runs-on: ${{matrix.listofvalues}}
     steps:
       - name: "task${{matrix.listofvalues}}"
-        run: echo "${{matrix.listofvalues}}"
+        run: | 
+          echo "${{matrix.listofvalues}}"
+          ipconfig
+          hostname
