@@ -5,7 +5,7 @@ jobs:
   matrixauto:
     strategy:
       matrix:
-        listofvalues: ["ubuntu-latest","ubuntu-latest"]
+        listofvalues: ["ubuntu-latest","windows-latest"]
     runs-on: ${{matrix.listofvalues}}
     steps:
       - name: "task${{matrix.listofvalues}}"
