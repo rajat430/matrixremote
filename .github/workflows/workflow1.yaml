@@ -3,10 +3,10 @@ on: [push]
 
 jobs:
   matrixauto:
-    runs-on: ubuntu-latest
     strategy:
       matrix:
-        listofvalues: [1,2,3,4]
+        listofvalues: ["ubuntu-latest","ubuntu-latest"]
+    runs-on: ${{matrix.listofvalues}}
     steps:
       - name: "task${{matrix.listofvalues}}"
         run: echo "${{matrix.listofvalues}}"
